@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClínicAll Saúde Integrada</title>
+
+  <!-- CSS do site -->
+  <link rel="stylesheet" href="./css.css" />
+
+  <!-- OwlCarousel (se futuramente quiser reativar a seção Equipe) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <!-- Botão de Scroll para o topo -->
+  <div class="scroll-up-btn" id="scrollUp">
+    <ion-icon name="chevron-up-outline" aria-hidden="true"></ion-icon>
+    <span class="sr-only">Voltar ao topo</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="max-width nav-inner">
+      <div class="logo">
+        <a href="#home" aria-label="Ir para o início">Clínica <span>Médica</span></a>
+      </div>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu">
+          <li><a href="#home" class="active">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Especialidades</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir/fechar menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Bem-vindo à</div>
+        <h1 class="text-2">ClínicAll Saúde Integrada</h1>
+        <div class="text-3"><span class="typing"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">Sobre Nós</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="./adr.jpg" alt="Fachada da clínica" />
+        </div>
+        <div class="column right">
+          <p class="text">
+            Somos uma clínica médica especializada em atendimento humanizado e de alta qualidade,
+            com equipe multidisciplinar pronta para cuidar da sua saúde.
+          </p>
+          <p>Oferecemos diversas especialidades para garantir cuidado completo para você e sua família.</p>
+
+          <!-- Cards de Missão, Valores e Visão -->
+          <div class="info-cards">
+            <article class="card reveal">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              <h3>Missão</h3>
+              <p>“Promover a saúde e a qualidade de vida das pessoas a partir de um atendimento profissional, ético, humano e integrado.”</p>
+            </article>
+
+            <article class="card reveal">
+              <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+              <h3>Valores</h3>
+              <ul>
+                <li>Compromisso com o Paciente e a sua Saúde</li>
+                <li>Ética</li>
+                <li>Comprometimento e valorização do Corpo Clínico</li>
+                <li>Valorização e qualificação dos Colaboradores</li>
+                <li>Competência e transparência nos processos de atendimento aos Pacientes</li>
+                <li>Responsabilidade pelos Resultados</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+              <h3>Visão</h3>
+              <p>“Ser reconhecida como uma das melhores Clínica Médica Multidisciplinar Integrada em Jaboatão dos Guararapes pela Excelência em Atendimentos, Processos e Resultados.”</p>
+            </article>
+          </div>
+
+          <a href="#contact" class="btn-primary">Agende sua consulta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especialidades -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">Especialidades</h2>
+
+      <!-- Campo de busca -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar especialidade..." aria-label="Buscar especialidade" />
+      </div>
+
+      <div class="serv-content">
+        <!-- cada card com classe reveal para animar -->
+        <div class="card reveal"><div class="box"><ion-icon name="medkit-outline"></ion-icon><div class="text">Alergologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="heart-outline"></ion-icon><div class="text">Cardiologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="heart-outline"></ion-icon><div class="text">Cardiologia Pediátrica</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="medkit-outline"></ion-icon><div class="text">Clínica Médica</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Bariátrica</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Oncológica</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Vascular</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Cabeça e Pescoço</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Geral</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Plástica</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Cirurgia Pediátrica</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="eyedrop-outline"></ion-icon><div class="text">Dermatologia</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="medkit-outline"></ion-icon><div class="text">Endocrinologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="medkit-outline"></ion-icon><div class="text">Endocrinologia Pediátrica</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="bicycle-outline"></ion-icon><div class="text">Fisioterapia Motora</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bicycle-outline"></ion-icon><div class="text">Fisioterapia Respiratória</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="bicycle-outline"></ion-icon><div class="text">Fisioterapia Pélvica</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="volume-high-outline"></ion-icon><div class="text">Fonoaudiologia</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="heart-outline"></ion-icon><div class="text">Gastroenterologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="people-outline"></ion-icon><div class="text">Geriatria</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="woman-outline"></ion-icon><div class="text">Ginecologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="heart-outline"></ion-icon><div class="text">Hepatologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="woman-outline"></ion-icon><div class="text">Mastologia</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="medkit-outline"></ion-icon><div class="text">Medicina da Dor</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="pulse-outline"></ion-icon><div class="text">Neurologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="pulse-outline"></ion-icon><div class="text">Neurocirurgia</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="nutrition-outline"></ion-icon><div class="text">Nutrição</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="nutrition-outline"></ion-icon><div class="text">Nutrologia</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Oncologia</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="eye-outline"></ion-icon><div class="text">Oftalmologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="mic-outline"></ion-icon><div class="text">Otorrino</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="bandage-outline"></ion-icon><div class="text">Ortopedia Geral</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="hand-left-outline"></ion-icon><div class="text">Ortopedia Mão</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="footsteps-outline"></ion-icon><div class="text">Ortopedia Pé</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="body-outline"></ion-icon><div class="text">Ortopedia Joelho</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="body-outline"></ion-icon><div class="text">Ortopedia Coluna</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="construct-outline"></ion-icon><div class="text">Terapia Ocupacional</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="cloud-outline"></ion-icon><div class="text">Pneumologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="people-outline"></ion-icon><div class="text">Pediatria</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="walk-outline"></ion-icon><div class="text">Psicomotricidade</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="happy-outline"></ion-icon><div class="text">Psicologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="book-outline"></ion-icon><div class="text">Psicopedagogia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="medkit-outline"></ion-icon><div class="text">Psiquiatria</div></div></div>
+
+        <div class="card reveal"><div class="box"><ion-icon name="male-outline"></ion-icon><div class="text">Proctologia</div></div></div>
+        <div class="card reveal"><div class="box"><ion-icon name="male-outline"></ion-icon><div class="text">Urologia</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contato</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <h3 class="text">Fale Conosco</h3>
+          <p>Estamos prontos para atender você. Agende sua consulta.</p>
+
+          <div class="icons">
+            <div class="row">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <div class="info">
+                <div class="head">Telefone</div>
+                <div class="sub-title">(81) 3468-1999</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+              <div class="info">
+                <div class="head">WhatsApp</div>
+                <div class="sub-title">
+                  <a href="https://wa.me/5581986864334" target="_blank" rel="noopener" class="btn-whatsapp">
+                    <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon> (81) 98686-4334
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <div class="info">
+                <div class="head">Endereço</div>
+                <div class="sub-title">
+                  Av. Ayrton Senna da Silva, 3835 – Piedade, Jaboatão dos Guararapes – PE, 54420-030
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">
+                  <a href="mailto:contato@clinicamedica.com">contato@clinicamedica.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+              <div class="info">
+                <div class="head">Instagram</div>
+                <div class="sub-title">
+                  <a href="https://www.instagram.com/clinicallatende" target="_blank" rel="noopener" class="btn-instagram">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> @clinicallatende
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa Google + botão Como chegar -->
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Av.+Ayrton+Senna+da+Silva,+3835+-+Piedade,+Jaboat%C3%A3o+dos+Guararapes+-+PE,+54420-030&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Mapa do endereço da clínica"
+            ></iframe>
+          </div>
+
+          <p class="cta-howto">
+            <a
+              class="btn-primary"
+              href="https://www.google.com/maps/dir/?api=1&destination=Av.+Ayrton+Senna+da+Silva,+3835+-+Piedade,+Jaboat%C3%A3o+dos+Guararapes+-+PE,+54420-030"
+              target="_blank"
+              rel="noopener"
+            >Como chegar</a>
+          </p>
+
+        </div><!-- .column.left -->
+      </div><!-- .contact-content -->
+    </div><!-- .max-width -->
+  </section>
+
+  <!-- Scripts de terceiros -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+  <!-- Script do site -->
+  <script>
+    // Sticky navbar e botão subir
+    const navbar = document.getElementById('navbar');
+    const scrollUp = document.getElementById('scrollUp');
+    const menu = document.getElementById('menu');
+    const menuBtn = document.getElementById('menuBtn');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('sticky', window.scrollY > 20);
+      scrollUp.classList.toggle('show', window.scrollY > 500);
+    });
+
+    // Scroll to top
+    scrollUp.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Menu mobile
+    menuBtn.addEventListener('click', () => menu.classList.toggle('active'));
+    document.querySelectorAll('.menu a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        document.querySelectorAll('.menu a').forEach(el => el.classList.remove('active'));
+        e.target.classList.add('active');
+        const href = e.target.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+        menu.classList.remove('active');
+      });
+    });
+
+    // Typed.js
+    new Typed('.typing', {
+      strings: ['Atendimento Humanizado', 'Especialidades Médicas', 'Equipe Multidisciplinar', 'Saúde Integrada'],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+
+    // (Equipe) OwlCarousel – deixe comentado se não estiver usando a seção
+    // $('.carousel').owlCarousel({
+    //   margin: 20,
+    //   loop: true,
+    //   autoplay: true,
+    //   autoplayTimeout: 2500,
+    //   autoplayHoverPause: true,
+    //   responsive: {
+    //     0: { items: 1, nav: false },
+    //     600: { items: 2, nav: false },
+    //     1000: { items: 3, nav: false }
+    //   }
+    // });
+
+    // ------- Filtro de especialidades com destaque -------
+    const searchInput = document.getElementById("searchInput");
+    const cards = [...document.querySelectorAll(".services .card")];
+
+    // Guardar o HTML original para poder remover o destaque ao limpar a busca
+    const originalCardHTML = cards.map(card => card.querySelector('.box').innerHTML);
+
+    function highlight(text, term){
+      if(!term) return text;
+      const safe = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // escapar regex
+      const re = new RegExp(`(${safe})`, 'gi');
+      return text.replace(re, '<mark class="hl">$1</mark>');
+    }
+
+    function filterCards(){
+      const query = searchInput.value.trim().toLowerCase();
+      cards.forEach((card, i) => {
+        // restaurar HTML original antes de destacar novamente
+        card.querySelector('.box').innerHTML = originalCardHTML[i];
+
+        const text = card.innerText.toLowerCase();
+        const match = !query || text.includes(query);
+        card.style.display = match ? "block" : "none";
+
+        // aplicar highlight apenas no nome da especialidade
+        if (match && query){
+          const nameEl = card.querySelector('.text');
+          nameEl.innerHTML = highlight(nameEl.textContent, query);
+        }
+      });
+    }
+
+    searchInput.addEventListener("input", filterCards);
+
+    // ------- Animar elementos ao entrar na tela (reveal) -------
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
